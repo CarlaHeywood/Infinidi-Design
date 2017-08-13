@@ -1,0 +1,15 @@
+html, body{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
+.Page-Content{
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background-image: url('../pics/greyAngleBack.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

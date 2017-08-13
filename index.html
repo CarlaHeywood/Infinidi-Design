@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<!-- Tab Title -->
+		<title> Infinidi Design</title>
+		<!-- Tab Icon -->
+		<link rel="shortcut icon" type="image/x-icon" href="pics/Icon.png" />
+		<!-- StyleSheet -->
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page.css"/>
+		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+		<!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+  </head>
+	<body>
+		<!-- Nav Bar -->
+		<header>
+			<div class="bar" id="bar">
+				<div class="burgermenu" id="burgermenu" onclick="animateMenu(this)">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+				<a href="/">
+					<div class="logo" onclick="animateMenu(getElementById('burgermenu'))"></div>
+				</a>
+				<ul id="mySidenav" class="menuOptions">
+					<li><a href="#Shop" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">Shop</a></li>
+					<li><a href="#Shoes" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">Shoes</a></li>
+					<li><a href="#Events" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">Events</a></li>
+					<li><a href="#Music" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">Music</a></li>
+					<li><a href="#About" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">About</a></li>
+					<li><a href="#Contact" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">Contact</a></li>
+					</ul>
+			</div>
+		</header>
+		<!-- Loader -->
+		<div class="Loader">
+			<div class="LineWrapper">
+				<div class="LoaderLine"></div>
+			</div>
+		</div>
+	  <div class="Page-Content">
+			<!-- Landing Page -->
+			<div class="page" id="Landing">
+				<div class="parent" id="parent1">
+					<div class="child" id="child1">
+						<div class="landingShoe">
+							<img class="shoesSlide" src="../pics/jordan8.png">
+						</div>
+						<h1 id="release">Check out <br> our future releases.</h1>
+						<a class="exploreButton">EXPLORE</a>
+					</div>
+				</div>
+			</div>
+			<!-- Events -->
+			<div class="page" id="Events">
+				<div class="parent" id="parent1">
+					<div class="child" id="child1">
+						<h1 id="name">Events</h1>
+					</div>
+				</div>
+			</div>
+			<!-- Music -->
+			<div class="page" id="Music">
+				<div class="parent" id="parent1">
+					<div class="child" id="child1">
+						<h1 id="name">Music</h1>
+					</div>
+				</div>
+			</div>
+			<!-- Contact -->
+			<div class="page" id="Contact">
+				<div class="parent" id="parent1">
+					<div class="child" id="child1">
+						<h1 id="name">Contact</h1>
+					</div>
+				</div>
+			</div>
+			<!-- <div id="shoeCatalog"></div> -->
+		</div>
+
+		<script id="shoeTemplate" type="text/x-handlebars-template">
+			{{#each Shoes}}
+				<image src="{{Pic}}"></image>
+				<h2>{{Model}}</h2>
+				<h2>${{Price}}</h2>
+			{{/each}}
+		</script>
+		<!-- Refrencing -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- File -->
+		<script src="js/main.js"></script>
+		<script src="js/handlebars.js"></script>
+	</body>
+</html>

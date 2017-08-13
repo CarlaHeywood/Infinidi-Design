@@ -1,0 +1,90 @@
+/* Pages */
+.page{
+	height: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#Landing{
+	display: block;
+	background-image: url('../pics/greyAngleBack.png');
+	background-position: bottom;
+}
+.landingShoe{
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 200px;
+	width:	800px;
+	height: 525px;
+	/*background-image: url('../pics/jordan8.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;*/
+	z-index: 99;
+}
+.landingShoe > img{
+	margin: auto;
+	height: 100%;
+	width: 100%;
+}
+#release{
+	margin: auto;
+	position: absolute;
+	top: 150px;
+	font-size: 50px;
+	padding: 10%;
+}
+.exploreButton{
+	position: absolute;
+	margin: auto;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: .5%;
+	padding-bottom: .5%;
+	font-size: 20px;
+	top: 420px;
+	left: 15%;
+	border: 1px solid black;
+	cursor: pointer;
+}
+.exploreButton:hover{
+	color: white;
+	background-color:
+}
+#Events{
+	background-image: url('../pics/greyAngleBackTop.png');
+	background-position: top;
+	text-align: center;
+}
+#Music{
+
+}
+.parent{
+	height: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+.child{
+	position: relative;
+}
+#child1{
+	width: 100%;
+}
+@media only screen and (max-width: 1140px) {
+	.landingShoe{
+		margin: auto;
+		position: absolute;
+		top: 300px;
+		left: 0;
+		right: 0;
+	}
+	#release{
+		top:300px;
+	}
+	.exploreButton{
+		font-size: 25px;
+		color: black;
+		top:550px;
+	}
+}
