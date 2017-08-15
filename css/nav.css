@@ -84,7 +84,7 @@ a{
     left: 0;
     height: 75%;
     width: 50%;
-    background-image: url("/pics/Logo.png");
+    background-image: url("https://raw.githubusercontent.com/CarlaHeywood/Infinidi-Design/master/pics/Logo.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
