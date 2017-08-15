@@ -50,7 +50,7 @@
 }
 .exploreButton:hover{
 	color: white;
-	background-color:
+	background-color: black;
 }
 #Events{
 	background-image: url('../pics/greyAngleBackTop.png');
@@ -60,12 +60,80 @@
 #Music{
 
 }
+#Contact{
+	text-align: center;
+}
+.contactForm{
+	margin: auto;
+	position: relative;
+	text-align: left;
+	height:	100%;
+	width:80%;
+	left:	0;
+	display: block;
+}
+.contactForm > form{
+	position: relative;
+	margin: auto;
+	align-self: center;
+	padding-left: 6%;
+	break-after: column;
+	outline: 0;
+	user-select: none;
+}
+*:focus{
+	outline: none;
+}
+input[type=text] {
+	width:100%;
+	border: none;
+	background-color: #d1d1d1;
+}
+input[type=submit],input[type=reset]{
+	width: 40%;
+	border: none;
+	background-color: #d1d1d1;
+}
+.info{
+	position: relative;
+}
+.message{
+	height:100px;
+}
+.contactInfo{
+	margin: auto;
+	position:relative;
+	width: 50%;
+	right: 0;
+}
+.icons{
+	position: relative;
+	height:100px;
+}
+.fa{
+	padding:10px;
+}
+.fa:before{
+	height:200px;
+}
+.fa:after{
+	height:200px;
+}
+.contactColumns{
+	columns:2;
+}
+#childContact{
+	height:auto;
+	top:50%;
+	transform: translateY(-50%);
+}
 .parent{
-	height: 100%;
+	height:100%;
 	min-height: 100%;
 	overflow: hidden;
 }
 .child{
+	height: 85%;
 	position: relative;
 }
 #child1{

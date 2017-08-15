@@ -6,6 +6,7 @@ html, body{
 }
 .Page-Content{
   margin: auto;
+  top: 15%;
   height: 100%;
   width: 100%;
   background-image: url('../pics/greyAngleBack.png');

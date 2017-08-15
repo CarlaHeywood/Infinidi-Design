@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/page.css"/>
 		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
   </head>
@@ -26,7 +27,7 @@
 					<div class="logo" onclick="animateMenu(getElementById('burgermenu'))"></div>
 				</a>
 				<ul id="mySidenav" class="menuOptions">
-					<li><a href="#Shop" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">Shop</a></li>
+					<li><a href="https://squareup.com/store/infinidi-designs" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">Shop</a></li>
 					<li><a href="#Shoes" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">Shoes</a></li>
 					<li><a href="#Events" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">Events</a></li>
 					<li><a href="#Music" onclick="smoothScroll();animateMenu(getElementById('burgermenu'))">Music</a></li>
@@ -70,11 +71,52 @@
 					</div>
 				</div>
 			</div>
-			<!-- Contact -->
-			<div class="page" id="Contact">
+			<!--About -->
+			<div class="page" id="About">
 				<div class="parent" id="parent1">
 					<div class="child" id="child1">
+						<h1 id="name">About</h1>
+					</div>
+				</div>
+			</div>
+			<!-- Contact -->
+			<div class="page" id="Contact">
+				<div class="parent" id="parentContact">
+					<div class="child" id="childContact">
 						<h1 id="name">Contact</h1>
+						<div class="contactColumns">
+							<div class="contactForm">
+								<form action="malto:infinididesign@gmail.com" method="post" enctype="text/plain">
+									Name:<br>
+									<input class="name" type="text" name="name"><br>
+									Phone Number:<br>
+									<input class="phonenumber" type="text" name="number"><br>
+									E-mail:<br>
+									<input class="email" type="text" name="mail"><br>
+									Message:<br>
+									<input class ="message" type="text" name="comment"><br><br>
+									<input type="submit" value="Send">
+									<input type="reset" value="Reset">
+								</form>
+							</div>
+							<div class="contactInfo">
+									<p class="info"> <i class="fa fa-map-marker"></i>
+											Infinidi Designs<br>
+											4322 w Crenshaw Blvd<br>
+											Los Angeles, CA 90008<br>
+											<br>
+											<i class="fa fa-phone"></i>
+											323.542.8513<br>
+											<i class="fa fa-envelope"></i>
+											infinididesigns@gmail.com<br>
+									</p>
+									<div class="icons">
+										<i class="fa fa-instagram" href="https://www.instagram.com/infinidi_designs/?hl=en"></i>
+										<i class="fa fa-facebook"></i>
+										<i class="fa fa-twitter" href="https://twitter.com/Infinidi_Design?lang=en"></i>
+									</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
