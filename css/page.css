@@ -5,9 +5,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+#name{
+	text-align: center;
+}
 #Landing{
 	display: block;
-	background-image: url('../pics/greyAngleBack.png');
+	background-image: url('../pics/lightDarkGreyRed.png');
 	background-position: bottom;
 }
 .landingShoe{
@@ -50,7 +53,79 @@
 }
 .exploreButton:hover{
 	color: white;
-	background-color: black;
+	background-color: #C12328;
+	border-color: #C12328;
+}
+hr{
+	width:50%;
+}
+#Shoes{
+	text-align: center;
+}
+#shoeColumn{
+	height:450px;
+}
+.shoesChildContent{
+	position: relative;
+	height: 525px;
+	top:50%;
+	transform: translateY(-50%);
+}
+.shoesName{
+	text-align: center;
+	margin: auto;
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+.shoesD{
+	font-size: 20px;
+}
+.shoeIcons{
+	height:	150px;
+	width: 150px;
+	display: block;
+	margin: auto;
+	opacity: 0;
+}
+.fa{
+	color:#C12328;
+}
+.cleaning{
+	margin: auto;
+	position: relative;
+	height: 100%;
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+.shoesButton{
+	margin: auto;
+	position: absolute;
+	display: block;
+	border: 2px solid #C12328;
+	border-radius: 8px;
+	color:  #C12328;
+	width:	20%;
+	text-align: center;
+	cursor: pointer;
+	bottom:20%;
+	left:0;
+	right:0;
+	opacity: 0;
+}
+.restore{
+	margin: auto;
+	position: relative;
+	height: 100px;
+	width: 33.33%;
+	float: left;
+}
+.custom{
+	margin: auto;
+	position: relative;
+	height: 100px;
+	width: 33.33%;
+	float: left;
 }
 #Events{
 	background-image: url('../pics/greyAngleBackTop.png');
@@ -58,7 +133,14 @@
 	text-align: center;
 }
 #Music{
-
+	background-image: url('../pics/MusicBack.png');
+	background-position: bottom;
+	text-align: center;
+}
+#About{
+	background-image: url('../pics/AboutBack.png');
+	background-position: top;
+	text-align: center;
 }
 #Contact{
 	text-align: center;
@@ -68,8 +150,9 @@
 	position: relative;
 	text-align: left;
 	height:	100%;
-	width:80%;
+	width:50%;
 	left:	0;
+	float:left;
 	display: block;
 }
 .contactForm > form{
@@ -77,25 +160,32 @@
 	margin: auto;
 	align-self: center;
 	padding-left: 6%;
-	break-after: column;
 	outline: 0;
 	user-select: none;
+	display: block;
 }
 *:focus{
 	outline: none;
 }
 input[type=text] {
-	width:100%;
+	width:80%;
 	border: none;
-	background-color: #d1d1d1;
+	background-color: #C12328;
+	color: white;
 }
 input[type=submit],input[type=reset]{
 	width: 40%;
 	border: none;
-	background-color: #d1d1d1;
+	background-color: #C12328;
+	color:white;
+}
+input[type=reset]{
+	width:10%;
 }
 .info{
 	position: relative;
+	top: 2px;
+	text-align: left;
 }
 .message{
 	height:100px;
@@ -103,8 +193,8 @@ input[type=submit],input[type=reset]{
 .contactInfo{
 	margin: auto;
 	position:relative;
+	float: left;
 	width: 50%;
-	right: 0;
 }
 .icons{
 	position: relative;
@@ -119,13 +209,18 @@ input[type=submit],input[type=reset]{
 .fa:after{
 	height:200px;
 }
-.contactColumns{
-	columns:2;
-}
 #childContact{
 	height:auto;
 	top:50%;
 	transform: translateY(-50%);
+}
+.contactColumns{
+	margin: auto;
+	position: relative;
+	display: block;
+	width: 75%;
+	height: 300px;
+	padding: 5%;
 }
 .parent{
 	height:100%;

@@ -77,6 +77,7 @@ function smoothScroll() {
 // Parallax
 $(window).scroll(function(){
   var parallaxScroll = $(this).scrollTop();
+  console.log(parallaxScroll);
   $('.landingShoe').css({
     'transform' : 'translate(0px, '+ parallaxScroll *-.1 +'%)'
   });
@@ -86,6 +87,23 @@ $(window).scroll(function(){
   $('.exploreButton').css({
     'transform' : 'translate(0px, '+ parallaxScroll *-3 +'%)'
   });
+  if(parallaxScroll < 600){
+    $('.bar').css(
+      "background-color","rgba(255,255,255,0)");
+  }
+  else{
+    $('.bar').css(
+      "background-color","white");
+  }
+  if(parallaxScroll > 1200){
+    $('.shoeIcons').animate({
+      opacity: 1
+    }, 1000);
+    $('.shoesButton').animate({
+      opacity: 1
+    }, 1000);
+  }
+
 });
 
 /* Menubar hiding
